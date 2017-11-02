@@ -1,7 +1,4 @@
 module Memorable
-  module InstanceMethods
-
-  end
   module ClassMethods
     def count
       all.count
