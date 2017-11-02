@@ -2,7 +2,7 @@ require 'pry'
 #require_relative 'concerns/memorable.rb'
 
 class Song
-  include Paramable::InstanceMethods
+  include Memorable::InstanceMethods
   include Paramable::InstanceMethods
   extend Memorable::ClassMethods
   extend Findable::ClassMethods
@@ -12,9 +12,9 @@ class Song
 
   @@songs = []
 
-  def initialize
-    @@songs << self
-  end
+  #def initialize
+    #@@songs << self
+  #end
 
   #def self.find_by_name(name)
     #@@songs.detect{|a| a.name == name}
