@@ -2,10 +2,10 @@ require 'pry'
 #require_relative 'concerns/memorable.rb'
 
 class Song
-
+  include Paramable::InstanceMethods
   extend Memorable::ClassMethods
   extend Findable::ClassMethods
-  #include Paramable::InstanceMethods
+  
   attr_accessor :name
   attr_reader :artist
 
